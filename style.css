@@ -25,6 +25,9 @@ body div {
 
 #header {
     display: flex;
+    /* border: 1px solid green; */
+    padding-top: 0%;
+    gap: 25%;
 }
 
 #header-logo, button {
@@ -34,6 +37,7 @@ body div {
 
 #header-logo {
     font-size: 24px;
+    width: 25%;
 }
 
 #header a {
@@ -47,12 +51,24 @@ body div {
 #main-container {
     display: flex;
     gap: 50px;
-    padding: 50px 0px 50px 0px;
+    padding-left: 2em;
+    margin-bottom: 4em;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
 }
 
 #main-text {
+    text-align: left;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 0em;
+}
+
+#sub-text {
+    text-align: left;
 }
 
 #image-placeholder {
@@ -60,6 +76,7 @@ body div {
     align-items: center;
     justify-content: center;
     background-color: #6d747d;
+    margin-right: 5em;
 }
 
 button {
@@ -67,6 +84,14 @@ button {
     border: none;
     border-radius: 4px; /* round corners */
     padding: 10px 35px 10px 35px;
+    width: 9em;
+}
+
+#information-header-text {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 0em;
+    margin-top: 0em;
 }
 
 .button {
@@ -78,23 +103,40 @@ button {
     gap: 30px;
 }
 
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
 .block {
+    width: 7em;
+    height: 4em;
     border: #3882f6 solid 3px;
     border-radius: 10px;
 }
 
 #quote {
-    background-color: #e5e7eb;;
+    background-color: #e5e7eb;
 }
 
 blockquote {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
+    text-align: left;
 }
 
 #quote-attribution {
     font-weight: bolder;
+    text-align: right;
+}
+
+#call-to-action {
+    display: flex;
+    justify-content: center;;
+    padding: 5em;
 }
 
 #call-to-action-container {
@@ -103,6 +145,14 @@ blockquote {
     color: #f9faf8;
     background-color: #3882f6;
     border-radius: 7px;
+    height: 5em;
+    width: 45em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.left-align {
+    text-align: left;
 }
 
 #call-to-action-container button {
